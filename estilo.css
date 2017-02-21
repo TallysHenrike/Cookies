@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Mogra);
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	background-color: #65A0CD;
+}
+
+a {
+	font-family: 'Mogra', cursive;
+	color: white;
+	text-decoration: none;
+}
+
+#menu {
+	width: 100%;
+	padding-left: 10px;
+	background-color: #3C4658;
+	box-shadow: 0px 0px 7px rgb(0,0,0);
+}
+
+#casa figcaption {
+	margin-left: 6px;
+}
+
+#casa {
+	width: 50px;
+	transition: .3s;
+}
+#casa:hover {
+	transform: translate(0px, 10px);
+}
+/* DIMENCIONAMENTO DO GRID */
+.grid {
+	width: 890px;
+	height: 890px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	position: relative;
+	border-radius: 10px;
+	background-color: #426C8F;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.7);
+}
+@media only screen and (max-width: 890px){
+	.grid {
+		width: 600px;
+		height: 1180px;
+	}
+}
+/* FIM DO DIMENCIONAMENTO DO GRID */
+.bloco {
+	background-color: #5884B6;
+	position:absolute;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.7);
+	border-radius: 10px;
+	transition: .5s;
+	background-position: 50% 50%;
+	background-size: 320px 320px;
+}
+.bloco:hover {
+	background-position: 0px 0px;
+	background-size: 270px 270px;
+}
+
+.bloco a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	transition: .5s;
+	font-size: 1em;
+	line-height: 50px;
+	text-shadow: 0px 0px 20px black;
+}
+
+.bloco a:hover {
+	background-color: rgba(0,0,0,.5);
+	font-size: 1.5em;
+	line-height: 150px;
+}
+
+/* Receitas */
+
+#bloco1{
+	top: 20px;
+	left: 20px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/bolo_gelado.jpg);
+}
+
+#bloco2{
+	top: 20px;
+	left: 310px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/fuba_cremoso.jpg);
+}
+
+#bloco3{
+	top: 20px;
+	left: 600px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/bolo_de_laranja.jpg);
+}
+@media only screen and (max-width: 890px){
+	#bloco3{
+		top: 310px;
+		left: 20px;
+	}
+}
+#bloco4{
+	top: 310px;
+	left: 20px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/iogurte_nutela.jpg);
+}
+@media only screen and (max-width: 890px){
+	#bloco4{
+		top: 310px;
+		left: 310px;
+	}
+}
+#bloco5{
+	top: 310px;
+	left: 310px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/chocolate-no-micro-ondas.jpg);
+}
+@media only screen and (max-width: 890px){
+	#bloco5{
+		top: 600px;
+		left: 20px;
+	}
+}
+#bloco6{
+	top: 310px;
+	left: 600px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/bolo_de_banana.jpg);
+}
+@media only screen and (max-width: 890px){
+	#bloco6{
+		top: 600px;
+		left: 310px;
+	}
+}
+#bloco7{
+	top: 600px;
+	left: 20px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/recheio_de_bolo.jpg);
+}
+@media only screen and (max-width: 890px){
+	#bloco7{
+		top: 890px;
+		left: 20px;
+	}
+}
+#bloco8{
+	top: 600px;
+	left: 310px;
+	width: 270px;
+	height: 270px;
+	background-image: url(img/torta_holandesa.jpg);
+}
+@media only screen and (max-width: 890px){
+	#bloco8{
+		top: 890px;
+		left: 310px;
+	}
+}
+
+.receita {
+	width: 890px;
+	height: inherit;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	position: relative;
+	border-radius: 10px;
+	background-color: #426C8F;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.7);
+	font-family: 'Mogra', cursive;
+	font-size: 1em;
+}
+@media only screen and (max-width: 890px){
+	.receita {
+		width: 600px;
+	}
+}
+.receita h1 {
+	height: 40px;
+	border-radius: 10px 10px 0px 0px;
+	padding: 5px;
+	background-color: #6565cd;
+	text-align: center;
+	font-family: 'Mogra', cursive;
+	font-size: 2em;
+}
+
+#conteudo {
+	padding: 50px;
+}
+
+#conteudo h3 {
+	margin: 5px -50px;
+	padding: 5px 0px;
+	background-color: #555;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+#conteudo h4 {
+	font-size: 1.5em;
+}
+
+#conteudo ol {
+	margin: 20px 15px;
+}
+
+#conteudo li {
+	margin: 5px 0px;
+}
+/* RODAPÉ */
+#pre-footer {
+	width: 100%;
+	height: 50px;
+	background: -webkit-linear-gradient(to top, #FF6A28 , #65A0CD);
+	background: linear-gradient(to top, #FF6A28 , #65A0CD);
+}
+
+footer {
+	width: 100%;
+	height: 57px;
+	background-color: #FF6A28;
+}
+#img-footer {
+	background-image: url(img/rodape.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#link-footer {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
