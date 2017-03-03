@@ -177,9 +177,9 @@ footer {
 	width: 100%;
 	height: 57px;
 }
-#link-footer {
-	height: 1vh;
-	width: 100%;
+footer h1{
+	text-align: center;
+	font-size: 12pt;
 }
 /* RESPONSIVO */
 @media only screen and (max-width: 890px){
